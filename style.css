@@ -1,0 +1,8 @@
+.centerr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ri-arrow-down-s-line{
+    font-size: 2rem;
+}

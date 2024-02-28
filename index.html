@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ホーム|Penguin-123456</title>
     <link rel="icon" href="penguin_logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="materialize.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css" integrity="sha512-i5VzKip7owqOGjb0YTF8MR2J9yBVO3FLHeazKzLp354XYTmKcqEU3UeFYUw82R8tV6JqxeATOfstCfpfPhbyEA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
     <style>
-        .12{
-            text-align: center;
+        .centerr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ri-arrow-down-s-line{
+            font-size: 2rem;
         }
     </style>
 </head>
@@ -24,15 +30,15 @@
         </div>
     </nav>
     <div class="container">
-      <div class="12"><img src="penguin_logo.png" alt="logo"></div>
+      <div class="centerr"><img src="penguin_logo.png" alt="logo"></div>
       <h1 class="center">Penguin-123456</h2>
-      <a href="#location"><i class="ri-arrow-down-s-line center"></i></a><br>
+      <a href="#location"><i class="ri-arrow-down-s-line centerr"></i></a><br>
       <h2 id="location"><i class="ri-map-pin-user-line"></i>住んでいる場所</h2>
       <p>GitHubに公開しているところまでです。</p>
       <p>日本の岡山県に住んでいます。</p>
       <h3><i class="ri-map-pin-2-line"></i>Map</h3>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838473.2135567437!2d133.1805391499244!3d34.82390129097295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35546638e2b69587%3A0xd221061d182f6d53!2z5bKh5bGx55yM!5e0!3m2!1sja!2sjp!4v1706947459739!5m2!1sja!2sjp" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <a href="#work"><i class="ri-arrow-down-s-line center"></i></a><br>
+      <a href="#work"><i class="ri-arrow-down-s-line centerr"></i></a><br>
       <h2 id="work"><i class="ri-checkbox-circle-fill"></i>作ったもの</h2>
       <p>作ったものを紹介します。</p>
       <div class="row">
@@ -51,12 +57,12 @@
         <div class="col s4 m6">
           <div class="card  ">
             <div class="card-content ">
-              <span class="card-title">文字数カウンター</span>
-              <p>文字どおり文字数をカウントするサイトです。</p>
+              <span class="card-title">ストップウォッチ</span>
+              <p>ストップウォッチです。startで再生stopでストップresetでリセットできます。</p>
             </div>
             <div class="card-action">
-              <a href="https://penguin-123456.github.io/counter" target="_blank">OPEN</a>
-              <a href="https://github.com/Penguin-123456/counter" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ri-github-fill"></i></a>
+              <a href="https://penguin-123456.github.io/stopwatch" target="_blank">OPEN</a>
+              <a href="https://github.com/Penguin-123456/stopwatch" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ri-github-fill"></i></a>
             </div>
           </div>
         </div>
@@ -121,29 +127,29 @@
           </div>
         </div>
       </div>
-      <a href="#skill"><i class="ri-arrow-down-s-line center"></i></a><br>
+      <a href="#skill"><i class="ri-arrow-down-s-line centerr"></i></a><br>
       <h2 id="skill">できること</h2>
       <p>私ができることを紹介します。</p>
       <div class="row">
-        <div class="col s3 m5">
+        <div class="col s3 m3">
           <div class="card-panel">
             <span class=""><h3><span class="orange-text">●</span>HTML</h3><br><p>HTMLはほとんどのものができると自分で思い込んでいます。よくサイトを作っています。</p>
             </span>
           </div>
         </div>
-        <div class="col s3 m5">
+        <div class="col s3 m3">
           <div class="card-panel">
             <span class=""><h3><span class="indigo-text">●</span>CSS</h3><br><p>CSSは基本的なものはできます。あまり難しいものはできません。</p>
             </span>
           </div>
         </div>
-        <div class="col s3 m5">
+        <div class="col s3 m3">
           <div class="card-panel">
             <span class=""><h3><span class="teal-text">●</span>JavaScript</h3><br><p>本当に少ししかできませんが。</p>
             </span>
           </div>
         </div>
-        <div class="col s3 m5">
+        <div class="col s3 m3">
           <div class="card-panel">
             <span class=""><h3><span class="amber-text">●</span>Python</h3><br><p>本当に少ししかできませんが。×2</p>
             </span>
@@ -175,6 +181,6 @@
           </div>
         </div>
       </footer>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="materialize.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
